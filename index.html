@@ -48,13 +48,14 @@
 
 <body>
 
-  <div id="fullpage">
+  
     <div class="section " id="section0">
       <div class="intro">
         <p class="site-name">Casper</p>
         <h1 class="head-tag">web development company</h1>
       </div>
     </div>
+    
     <div class="section" id="section1">
       <div class="intro container">
         <h2 class="second-block-title">HOW WE CAN HELP YOU</h2>
@@ -271,36 +272,11 @@
     </div>
   </div>
   </div>
-  </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
-  <script type="text/javascript" src="js/fullpage.js"></script>
   <script src="js/main.js"></script>
 
-
-  <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-      menu: '#menu',
-      navigation: true,
-      navigationPosition: 'right',
-      css3: true,
-      dragAndMove: true,
-      touchSensitivity: 18,
-      parallaxOptions: {
-        type: 'reveal',
-        percentage: 62,
-        property: 'translate'
-      },
-      lazyLoading: true,
-      anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
-      onLeave: function (origin, destination, direction) {
-        if (destination.index === 2) {
-          destination.item.classList.add('load-background');
-        }
-      }
-    });
-  </script>
 
 </body>
 

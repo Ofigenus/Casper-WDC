@@ -63,8 +63,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    
+    overflow-x: hidden;
     font-family: "Roboto", sans-serif;
 }
 
@@ -158,23 +157,9 @@ main {
     z-index: 2;
     transition: 1.2s ease;
 }
-
-section {
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    position: relative;
-}
-
 p {
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: #ffffff;
 }
 
 #fp-nav ul li p {
@@ -185,6 +170,8 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
 #section1 {
@@ -251,7 +238,7 @@ svg path {
 
 #nav li {
 	display:inline-block;
-	margin: 10px;
+	margin: 0 0 0 10px;
 	color: #000;
 	-webkit-border-radius: 10px;
             border-radius: 10px;
@@ -375,6 +362,8 @@ $duration: map-get($elastic, 'duration');
     visibility: visible;
     transition-delay: 0s;
     .navigation__inner {
+      display: flex;
+      align-items: center;
       background-color: $backgroundColor;
       transform: translate(0, 0);
       transition: transform $duration*1ms linear, background-color 0s linear;
@@ -386,6 +375,7 @@ $duration: map-get($elastic, 'duration');
   }
 }
 .navigation__inner {
+  border-radius: 25px 0 0 25px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -462,7 +452,12 @@ $duration: map-get($elastic, 'duration');
   position: relative;
   margin: 0 auto;
   transform: none;
-  left: 25%;
+  left: 20%;
+  padding-top: 25%;
+}
+
+.intro .site-name {
+  color: #fff;
 }
 
 .intro .head-tag {
