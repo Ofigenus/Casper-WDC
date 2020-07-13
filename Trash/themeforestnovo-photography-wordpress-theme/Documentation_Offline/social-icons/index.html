@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<!--
+  Flaticon icon font: Flaticon
+  Creation date: 22/06/2016 15:07
+-->
+<html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flaticon WebFont</title>
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="flaticon.css">
+    <meta charset="UTF-8">
+    <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    body {
+        font-family: 'Varela Round', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        color: #222;
+    }
+    a {
+        color: #333;
+        border-bottom: 1px solid #a9fd00;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-family: Flaticon;
+        font-size: 30px;
+        font-style: normal;
+        margin-left: 20px;
+        color: #333;
+    }
+    .wrapper {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 1em;
+    }
+    .title {
+        font-size: 1.25em;
+        text-align: center;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+    header {
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+        padding: 1em;
+    }
+    header .logo {
+        width: 210px;
+        height: 38px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 1em;
+        border: none;
+    }
+    header strong {
+        font-size: 1.95em;
+        font-weight: bold;
+        vertical-align: middle;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    .demo {
+        margin: 2em auto;
+        line-height: 1.25em;
+    }
+    .demo ul li {
+        margin-bottom: 1em;
+    }
+    .demo ul li .num {
+        color: #222;
+        border-radius: 20px;
+        display: inline-block;
+        width: 26px;
+        padding: 3px;
+        height: 26px;
+        text-align: center;
+        margin-right: 0.5em;
+        border: 1px solid #222;
+    }
+    .demo ul li code {
+        background-color: #222;
+        border-radius: 4px;
+        padding: 0.25em 0.5em;
+        display: inline-block;
+        color: #fff;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+        font-weight: lighter;
+        margin-top: 1em;
+        font-size: 0.8em;
+        word-break: break-all;
+    }
+    .demo ul li code.big {
+        padding: 1em;
+        font-size: 0.9em;
+    }
+    .demo ul li code .red {
+        color: #EF3159;
+    }
+    .demo ul li code .green {
+        color: #ACFF65;
+    }
+    .demo ul li code .yellow {
+        color: #FFFF99;
+    }
+    .demo ul li code .blue {
+        color: #99D3FF;
+    }
+    .demo ul li code .purple {
+        color: #A295FF;
+    }
+    .demo ul li code .dots {
+        margin-top: 0.5em;
+        display: block;
+    }
+    #glyphs {
+        border-bottom: 1px solid #ccc;
+        padding: 2em 0;
+        text-align: center;
+    }
+    .glyph {
+        display: inline-block;
+        width: 9em;
+        margin: 1em;
+        text-align: center;
+        vertical-align: top;
+        background: #FFF;
+    }
+    .glyph .glyph-icon {
+        padding: 10px;
+        display: block;
+        font-family:"Flaticon";
+        font-size: 64px;
+        line-height: 1;
+    }
+    .glyph .glyph-icon:before {
+        font-size: 64px;
+        color: #222;
+        margin-left: 0;
+    }
+    .class-name {
+        font-size: 0.65em;
+        background-color: #222;
+        color: #fff;
+        border-radius: 4px 4px 0 0;
+        padding: 0.5em;
+        color: #FFFF99;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    }
+    .author-name {
+        font-size: 0.6em;
+        background-color: #fcfcfd;
+        border: 1px solid #DEDEE4;
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        padding: 0.5em;
+    }
+    .class-name:last-child {
+        font-size: 10px;
+        color:#888;
+    }
+    .class-name:last-child a {
+        font-size: 10px;
+        color:#555;
+    }
+    .class-name:last-child a:hover {
+        color:#a9fd00;
+    }
+    .glyph > input {
+        display: block;
+        width: 100px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 12px;
+        cursor: text;
+    }
+    .glyph > input.icon-input {
+        font-family:"Flaticon";
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .attribution .title {
+        margin-top: 2em;
+    }
+    .attribution textarea {
+        background-color: #fcfcfd;
+        padding: 1em;
+        border: none;
+        box-shadow: none;
+        border: 1px solid #DEDEE4;
+        border-radius: 4px;
+        resize: none;
+        width: 100%;
+        height: 150px;
+        font-size: 0.8em;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+        -webkit-appearance: none;
+    }
+    .iconsuse {
+        margin: 2em auto;
+        text-align: center;
+        max-width: 1200px;
+    }
+    .iconsuse:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .iconsuse .image {
+        float: left;
+        width: 25%;
+        padding: 0 1em;
+    }
+    .iconsuse .image p {
+        margin-bottom: 1em;
+    }
+    .iconsuse .image span {
+        display: block;
+        font-size: 0.65em;
+        background-color: #222;
+        color: #fff;
+        border-radius: 4px;
+        padding: 0.5em;
+        color: #FFFF99;
+        margin-top: 1em;
+        font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    }
+    #footer {
+        text-align: center;
+        background-color: #4C5B5C;
+        color: #7c9192;
+        padding: 1em;
+    }
+    #footer a {
+        border: none;
+        color: #a9fd00;
+        font-weight: normal;
+    }
+    @media (max-width: 960px) {
+        .iconsuse .image {
+            width: 50%;
+        }
+    }
+    @media (max-width: 560px) {
+        .iconsuse .image {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body class="characters-off">
+
+   <section id="glyphs">          
+    
+      
+        <div class="glyph"><div class="glyph-icon flaticon-500px-logo"></div>
+            <div class="class-name">icon-500px-logo</div>
+            <div class="author-name">Author: <a data-file="500px-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-500px-logo-1"></div>
+            <div class="class-name">icon-500px-logo-1</div>
+            <div class="author-name">Author: <a data-file="500px-logo-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-51-on-social-logo"></div>
+            <div class="class-name">icon-51-on-social-logo</div>
+            <div class="author-name">Author: <a data-file="51-on-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-56-social-logo"></div>
+            <div class="class-name">icon-56-social-logo</div>
+            <div class="author-name">Author: <a data-file="56-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ads-of-the-world-logo"></div>
+            <div class="class-name">icon-ads-of-the-world-logo</div>
+            <div class="author-name">Author: <a data-file="ads-of-the-world-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ads-scuttlepad-logo"></div>
+            <div class="class-name">icon-ads-scuttlepad-logo</div>
+            <div class="author-name">Author: <a data-file="ads-scuttlepad-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-arte10-logo"></div>
+            <div class="class-name">icon-arte10-logo</div>
+            <div class="author-name">Author: <a data-file="arte10-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ashley-madison-social-logo"></div>
+            <div class="class-name">icon-ashley-madison-social-logo</div>
+            <div class="author-name">Author: <a data-file="ashley-madison-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-asmallworld-logo"></div>
+            <div class="class-name">icon-asmallworld-logo</div>
+            <div class="author-name">Author: <a data-file="asmallworld-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-badoo-social-logotype"></div>
+            <div class="class-name">icon-badoo-social-logotype</div>
+            <div class="author-name">Author: <a data-file="badoo-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-baidu-logo"></div>
+            <div class="class-name">icon-baidu-logo</div>
+            <div class="author-name">Author: <a data-file="baidu-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bananity-social-logo"></div>
+            <div class="class-name">icon-bananity-social-logo</div>
+            <div class="author-name">Author: <a data-file="bananity-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bandcamp-logo"></div>
+            <div class="class-name">icon-bandcamp-logo</div>
+            <div class="author-name">Author: <a data-file="bandcamp-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bebo-social-logotype"></div>
+            <div class="class-name">icon-bebo-social-logotype</div>
+            <div class="author-name">Author: <a data-file="bebo-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-behance-logo"></div>
+            <div class="class-name">icon-behance-logo</div>
+            <div class="author-name">Author: <a data-file="behance-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bettercodes-logo"></div>
+            <div class="class-name">icon-bettercodes-logo</div>
+            <div class="author-name">Author: <a data-file="bettercodes-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bisquits-logo"></div>
+            <div class="class-name">icon-bisquits-logo</div>
+            <div class="author-name">Author: <a data-file="bisquits-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bitacoras-logo"></div>
+            <div class="class-name">icon-bitacoras-logo</div>
+            <div class="author-name">Author: <a data-file="bitacoras-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bitacoras-symbol"></div>
+            <div class="class-name">icon-bitacoras-symbol</div>
+            <div class="author-name">Author: <a data-file="bitacoras-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-blackplanet-logotype"></div>
+            <div class="class-name">icon-blackplanet-logotype</div>
+            <div class="author-name">Author: <a data-file="blackplanet-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-blogbus-logo"></div>
+            <div class="class-name">icon-blogbus-logo</div>
+            <div class="author-name">Author: <a data-file="blogbus-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-blogger-logotype"></div>
+            <div class="class-name">icon-blogger-logotype</div>
+            <div class="author-name">Author: <a data-file="blogger-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bloson-logo"></div>
+            <div class="class-name">icon-bloson-logo</div>
+            <div class="author-name">Author: <a data-file="bloson-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-bola-a-logo"></div>
+            <div class="class-name">icon-bola-a-logo</div>
+            <div class="author-name">Author: <a data-file="bola-a-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-buzznet-logo"></div>
+            <div class="class-name">icon-buzznet-logo</div>
+            <div class="author-name">Author: <a data-file="buzznet-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cafemom-logo"></div>
+            <div class="class-name">icon-cafemom-logo</div>
+            <div class="author-name">Author: <a data-file="cafemom-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-care2-logo"></div>
+            <div class="class-name">icon-care2-logo</div>
+            <div class="author-name">Author: <a data-file="care2-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-caringbridge-logo"></div>
+            <div class="class-name">icon-caringbridge-logo</div>
+            <div class="author-name">Author: <a data-file="caringbridge-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cellufun-logo"></div>
+            <div class="class-name">icon-cellufun-logo</div>
+            <div class="author-name">Author: <a data-file="cellufun-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-citeulike-logo"></div>
+            <div class="class-name">icon-citeulike-logo</div>
+            <div class="author-name">Author: <a data-file="citeulike-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-classmates-logotype-symbol"></div>
+            <div class="class-name">icon-classmates-logotype-symbol</div>
+            <div class="author-name">Author: <a data-file="classmates-logotype-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-club-dante-social-logotype"></div>
+            <div class="class-name">icon-club-dante-social-logotype</div>
+            <div class="author-name">Author: <a data-file="club-dante-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-coderwall-logo"></div>
+            <div class="class-name">icon-coderwall-logo</div>
+            <div class="author-name">Author: <a data-file="coderwall-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-colourlovers-logo"></div>
+            <div class="class-name">icon-colourlovers-logo</div>
+            <div class="author-name">Author: <a data-file="colourlovers-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-coroflot"></div>
+            <div class="class-name">icon-coroflot</div>
+            <div class="author-name">Author: <a data-file="coroflot" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-couchsurfing-logo"></div>
+            <div class="class-name">icon-couchsurfing-logo</div>
+            <div class="author-name">Author: <a data-file="couchsurfing-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-creattica-logo"></div>
+            <div class="class-name">icon-creattica-logo</div>
+            <div class="author-name">Author: <a data-file="creattica-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-cross-tv-logo"></div>
+            <div class="class-name">icon-cross-tv-logo</div>
+            <div class="author-name">Author: <a data-file="cross-tv-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-dailymotion-logo"></div>
+            <div class="class-name">icon-dailymotion-logo</div>
+            <div class="author-name">Author: <a data-file="dailymotion-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-deezer-logo"></div>
+            <div class="class-name">icon-deezer-logo</div>
+            <div class="author-name">Author: <a data-file="deezer-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-delicious-logotype-of-squares"></div>
+            <div class="class-name">icon-delicious-logotype-of-squares</div>
+            <div class="author-name">Author: <a data-file="delicious-logotype-of-squares" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-desarrollo-web-or-web-development-logo"></div>
+            <div class="class-name">icon-desarrollo-web-or-web-development-logo</div>
+            <div class="author-name">Author: <a data-file="desarrollo-web-or-web-development-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-designrelated-logotype"></div>
+            <div class="class-name">icon-designrelated-logotype</div>
+            <div class="author-name">Author: <a data-file="designrelated-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-deviantart-logo"></div>
+            <div class="class-name">icon-deviantart-logo</div>
+            <div class="author-name">Author: <a data-file="deviantart-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-digg-logo"></div>
+            <div class="class-name">icon-digg-logo</div>
+            <div class="author-name">Author: <a data-file="digg-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-digg-logotype"></div>
+            <div class="class-name">icon-digg-logotype</div>
+            <div class="author-name">Author: <a data-file="digg-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-divoblogger-logo"></div>
+            <div class="class-name">icon-divoblogger-logo</div>
+            <div class="author-name">Author: <a data-file="divoblogger-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-doodle-ly-logotype"></div>
+            <div class="class-name">icon-doodle-ly-logotype</div>
+            <div class="author-name">Author: <a data-file="doodle-ly-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-douban-logo"></div>
+            <div class="class-name">icon-douban-logo</div>
+            <div class="author-name">Author: <a data-file="douban-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-dribbble-logo"></div>
+            <div class="class-name">icon-dribbble-logo</div>
+            <div class="author-name">Author: <a data-file="dribbble-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ebay-logo"></div>
+            <div class="class-name">icon-ebay-logo</div>
+            <div class="author-name">Author: <a data-file="ebay-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-etsy-logo"></div>
+            <div class="class-name">icon-etsy-logo</div>
+            <div class="author-name">Author: <a data-file="etsy-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-everloop-logo"></div>
+            <div class="class-name">icon-everloop-logo</div>
+            <div class="author-name">Author: <a data-file="everloop-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ex-fm-logo"></div>
+            <div class="class-name">icon-ex-fm-logo</div>
+            <div class="author-name">Author: <a data-file="ex-fm-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-eyeem-logo"></div>
+            <div class="class-name">icon-eyeem-logo</div>
+            <div class="author-name">Author: <a data-file="eyeem-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-facebook-logo"></div>
+            <div class="class-name">icon-facebook-logo</div>
+            <div class="author-name">Author: <a data-file="facebook-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fanlala-logo"></div>
+            <div class="class-name">icon-fanlala-logo</div>
+            <div class="author-name">Author: <a data-file="fanlala-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flickr-logo"></div>
+            <div class="class-name">icon-flickr-logo</div>
+            <div class="author-name">Author: <a data-file="flickr-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flipkart-logo"></div>
+            <div class="class-name">icon-flipkart-logo</div>
+            <div class="author-name">Author: <a data-file="flipkart-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-flixster-logo"></div>
+            <div class="class-name">icon-flixster-logo</div>
+            <div class="author-name">Author: <a data-file="flixster-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fod-social-logo"></div>
+            <div class="class-name">icon-fod-social-logo</div>
+            <div class="author-name">Author: <a data-file="fod-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fontli-logo"></div>
+            <div class="class-name">icon-fontli-logo</div>
+            <div class="author-name">Author: <a data-file="fontli-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fotki-logo"></div>
+            <div class="class-name">icon-fotki-logo</div>
+            <div class="author-name">Author: <a data-file="fotki-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-fotolog-social-network-logo"></div>
+            <div class="class-name">icon-fotolog-social-network-logo</div>
+            <div class="author-name">Author: <a data-file="fotolog-social-network-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-foursquare-logo"></div>
+            <div class="class-name">icon-foursquare-logo</div>
+            <div class="author-name">Author: <a data-file="foursquare-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-friendster-logo"></div>
+            <div class="class-name">icon-friendster-logo</div>
+            <div class="author-name">Author: <a data-file="friendster-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-funny-or-die-logo"></div>
+            <div class="class-name">icon-funny-or-die-logo</div>
+            <div class="author-name">Author: <a data-file="funny-or-die-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-gaiaonline-logo"></div>
+            <div class="class-name">icon-gaiaonline-logo</div>
+            <div class="author-name">Author: <a data-file="gaiaonline-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-gather-logo"></div>
+            <div class="class-name">icon-gather-logo</div>
+            <div class="author-name">Author: <a data-file="gather-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-geni-social-logo"></div>
+            <div class="class-name">icon-geni-social-logo</div>
+            <div class="author-name">Author: <a data-file="geni-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-geonick-logo"></div>
+            <div class="class-name">icon-geonick-logo</div>
+            <div class="author-name">Author: <a data-file="geonick-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-glipho-logo"></div>
+            <div class="class-name">icon-glipho-logo</div>
+            <div class="author-name">Author: <a data-file="glipho-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-glogster-logo"></div>
+            <div class="class-name">icon-glogster-logo</div>
+            <div class="author-name">Author: <a data-file="glogster-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-google-plus-social-logotype"></div>
+            <div class="class-name">icon-google-plus-social-logotype</div>
+            <div class="author-name">Author: <a data-file="google-plus-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-grooveshark-logotype"></div>
+            <div class="class-name">icon-grooveshark-logotype</div>
+            <div class="author-name">Author: <a data-file="grooveshark-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-grou-ps-logo"></div>
+            <div class="class-name">icon-grou-ps-logo</div>
+            <div class="author-name">Author: <a data-file="grou-ps-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-habbo-logotype"></div>
+            <div class="class-name">icon-habbo-logotype</div>
+            <div class="author-name">Author: <a data-file="habbo-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-habbo-logotype-1"></div>
+            <div class="class-name">icon-habbo-logotype-1</div>
+            <div class="author-name">Author: <a data-file="habbo-logotype-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-heello-logo"></div>
+            <div class="class-name">icon-heello-logo</div>
+            <div class="author-name">Author: <a data-file="heello-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hexun-logo"></div>
+            <div class="class-name">icon-hexun-logo</div>
+            <div class="author-name">Author: <a data-file="hexun-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hi5-social-logo"></div>
+            <div class="class-name">icon-hi5-social-logo</div>
+            <div class="author-name">Author: <a data-file="hi5-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hipstamatic-logo"></div>
+            <div class="class-name">icon-hipstamatic-logo</div>
+            <div class="author-name">Author: <a data-file="hipstamatic-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-hubbub-logo"></div>
+            <div class="class-name">icon-hubbub-logo</div>
+            <div class="author-name">Author: <a data-file="hubbub-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-inside-the-hotel-logotype"></div>
+            <div class="class-name">icon-inside-the-hotel-logotype</div>
+            <div class="author-name">Author: <a data-file="inside-the-hotel-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-instagram-social-network-logo-of-photo-camera"></div>
+            <div class="class-name">icon-instagram-social-network-logo-of-photo-camera</div>
+            <div class="author-name">Author: <a data-file="instagram-social-network-logo-of-photo-camera" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-intellectconnect-logo"></div>
+            <div class="class-name">icon-intellectconnect-logo</div>
+            <div class="author-name">Author: <a data-file="intellectconnect-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-iqyi-logo"></div>
+            <div class="class-name">icon-iqyi-logo</div>
+            <div class="author-name">Author: <a data-file="iqyi-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-itsmy-logo"></div>
+            <div class="class-name">icon-itsmy-logo</div>
+            <div class="author-name">Author: <a data-file="itsmy-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-itsmy-logo-1"></div>
+            <div class="class-name">icon-itsmy-logo-1</div>
+            <div class="author-name">Author: <a data-file="itsmy-logo-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-jiepang-logotype"></div>
+            <div class="class-name">icon-jiepang-logotype</div>
+            <div class="author-name">Author: <a data-file="jiepang-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-jux-logo"></div>
+            <div class="class-name">icon-jux-logo</div>
+            <div class="author-name">Author: <a data-file="jux-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-kaixin101-logotype-of-a-smiling-star"></div>
+            <div class="class-name">icon-kaixin101-logotype-of-a-smiling-star</div>
+            <div class="author-name">Author: <a data-file="kaixin101-logotype-of-a-smiling-star" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-kiwibox-logo"></div>
+            <div class="class-name">icon-kiwibox-logo</div>
+            <div class="author-name">Author: <a data-file="kiwibox-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ku6-logo"></div>
+            <div class="class-name">icon-ku6-logo</div>
+            <div class="author-name">Author: <a data-file="ku6-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-last-fm-logo"></div>
+            <div class="class-name">icon-last-fm-logo</div>
+            <div class="author-name">Author: <a data-file="last-fm-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-linkedin-logo"></div>
+            <div class="class-name">icon-linkedin-logo</div>
+            <div class="author-name">Author: <a data-file="linkedin-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-literatura-nova-logo"></div>
+            <div class="class-name">icon-literatura-nova-logo</div>
+            <div class="author-name">Author: <a data-file="literatura-nova-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-meetic-logo"></div>
+            <div class="class-name">icon-meetic-logo</div>
+            <div class="author-name">Author: <a data-file="meetic-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-meetme-logo"></div>
+            <div class="class-name">icon-meetme-logo</div>
+            <div class="author-name">Author: <a data-file="meetme-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-meetup-logo"></div>
+            <div class="class-name">icon-meetup-logo</div>
+            <div class="author-name">Author: <a data-file="meetup-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-meetyourfriends-logotype"></div>
+            <div class="class-name">icon-meetyourfriends-logotype</div>
+            <div class="author-name">Author: <a data-file="meetyourfriends-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-meneame-social-network-logo-of-an-elephant"></div>
+            <div class="class-name">icon-meneame-social-network-logo-of-an-elephant</div>
+            <div class="author-name">Author: <a data-file="meneame-social-network-logo-of-an-elephant" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-metacafe-logo"></div>
+            <div class="class-name">icon-metacafe-logo</div>
+            <div class="author-name">Author: <a data-file="metacafe-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-mixi-logo"></div>
+            <div class="class-name">icon-mixi-logo</div>
+            <div class="author-name">Author: <a data-file="mixi-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-mocospace-logo"></div>
+            <div class="class-name">icon-mocospace-logo</div>
+            <div class="author-name">Author: <a data-file="mocospace-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-my-heritage-logo"></div>
+            <div class="class-name">icon-my-heritage-logo</div>
+            <div class="author-name">Author: <a data-file="my-heritage-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-my-life-logo"></div>
+            <div class="class-name">icon-my-life-logo</div>
+            <div class="author-name">Author: <a data-file="my-life-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-my-life-social-logo"></div>
+            <div class="class-name">icon-my-life-social-logo</div>
+            <div class="author-name">Author: <a data-file="my-life-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-my-space-logo"></div>
+            <div class="class-name">icon-my-space-logo</div>
+            <div class="author-name">Author: <a data-file="my-space-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-myfolio-logo"></div>
+            <div class="class-name">icon-myfolio-logo</div>
+            <div class="author-name">Author: <a data-file="myfolio-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-myspace-logotype"></div>
+            <div class="class-name">icon-myspace-logotype</div>
+            <div class="author-name">Author: <a data-file="myspace-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ning-social-logo"></div>
+            <div class="class-name">icon-ning-social-logo</div>
+            <div class="author-name">Author: <a data-file="ning-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-nk-social-symbol"></div>
+            <div class="class-name">icon-nk-social-symbol</div>
+            <div class="author-name">Author: <a data-file="nk-social-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-notasweb-logo"></div>
+            <div class="class-name">icon-notasweb-logo</div>
+            <div class="author-name">Author: <a data-file="notasweb-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-odnoklassniki-logo"></div>
+            <div class="class-name">icon-odnoklassniki-logo</div>
+            <div class="author-name">Author: <a data-file="odnoklassniki-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-orkut-logo"></div>
+            <div class="class-name">icon-orkut-logo</div>
+            <div class="author-name">Author: <a data-file="orkut-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-p1-social-logotype"></div>
+            <div class="class-name">icon-p1-social-logotype</div>
+            <div class="author-name">Author: <a data-file="p1-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-panamo-logo"></div>
+            <div class="class-name">icon-panamo-logo</div>
+            <div class="author-name">Author: <a data-file="panamo-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-path-social-logotype"></div>
+            <div class="class-name">icon-path-social-logotype</div>
+            <div class="author-name">Author: <a data-file="path-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pengyu-logotype"></div>
+            <div class="class-name">icon-pengyu-logotype</div>
+            <div class="author-name">Author: <a data-file="pengyu-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pheed-logo"></div>
+            <div class="class-name">icon-pheed-logo</div>
+            <div class="author-name">Author: <a data-file="pheed-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pictify-logo"></div>
+            <div class="class-name">icon-pictify-logo</div>
+            <div class="author-name">Author: <a data-file="pictify-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pinspire-logo-symbol"></div>
+            <div class="class-name">icon-pinspire-logo-symbol</div>
+            <div class="author-name">Author: <a data-file="pinspire-logo-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pinstagram-logo"></div>
+            <div class="class-name">icon-pinstagram-logo</div>
+            <div class="author-name">Author: <a data-file="pinstagram-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-pinterest-social-logo"></div>
+            <div class="class-name">icon-pinterest-social-logo</div>
+            <div class="author-name">Author: <a data-file="pinterest-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-podio-social-logo"></div>
+            <div class="class-name">icon-podio-social-logo</div>
+            <div class="author-name">Author: <a data-file="podio-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-qq-social-logo-of-a-penguin"></div>
+            <div class="class-name">icon-qq-social-logo-of-a-penguin</div>
+            <div class="author-name">Author: <a data-file="qq-social-logo-of-a-penguin" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-questionity-logotype"></div>
+            <div class="class-name">icon-questionity-logotype</div>
+            <div class="author-name">Author: <a data-file="questionity-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-qzone-logo"></div>
+            <div class="class-name">icon-qzone-logo</div>
+            <div class="author-name">Author: <a data-file="qzone-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ravelry-logo"></div>
+            <div class="class-name">icon-ravelry-logo</div>
+            <div class="author-name">Author: <a data-file="ravelry-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ravelry-logo-1"></div>
+            <div class="class-name">icon-ravelry-logo-1</div>
+            <div class="author-name">Author: <a data-file="ravelry-logo-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-redalyc-logo"></div>
+            <div class="class-name">icon-redalyc-logo</div>
+            <div class="author-name">Author: <a data-file="redalyc-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-reddit-logo"></div>
+            <div class="class-name">icon-reddit-logo</div>
+            <div class="author-name">Author: <a data-file="reddit-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-reddit-social-logo-character"></div>
+            <div class="class-name">icon-reddit-social-logo-character</div>
+            <div class="author-name">Author: <a data-file="reddit-social-logo-character" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-rendezvous-logo"></div>
+            <div class="class-name">icon-rendezvous-logo</div>
+            <div class="author-name">Author: <a data-file="rendezvous-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-renren-logo"></div>
+            <div class="class-name">icon-renren-logo</div>
+            <div class="author-name">Author: <a data-file="renren-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-researchgate-logo"></div>
+            <div class="class-name">icon-researchgate-logo</div>
+            <div class="author-name">Author: <a data-file="researchgate-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-reverbnation-logo"></div>
+            <div class="class-name">icon-reverbnation-logo</div>
+            <div class="author-name">Author: <a data-file="reverbnation-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ryze-logo"></div>
+            <div class="class-name">icon-ryze-logo</div>
+            <div class="author-name">Author: <a data-file="ryze-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ryze-social-logo"></div>
+            <div class="class-name">icon-ryze-social-logo</div>
+            <div class="author-name">Author: <a data-file="ryze-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-scoop-it-logo"></div>
+            <div class="class-name">icon-scoop-it-logo</div>
+            <div class="author-name">Author: <a data-file="scoop-it-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-scoop-it-logo-1"></div>
+            <div class="class-name">icon-scoop-it-logo-1</div>
+            <div class="author-name">Author: <a data-file="scoop-it-logo-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-scribd-logo"></div>
+            <div class="class-name">icon-scribd-logo</div>
+            <div class="author-name">Author: <a data-file="scribd-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sina-logo"></div>
+            <div class="class-name">icon-sina-logo</div>
+            <div class="author-name">Author: <a data-file="sina-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sina-social-logo-of-an-eye"></div>
+            <div class="class-name">icon-sina-social-logo-of-an-eye</div>
+            <div class="author-name">Author: <a data-file="sina-social-logo-of-an-eye" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-skyrock-logo"></div>
+            <div class="class-name">icon-skyrock-logo</div>
+            <div class="author-name">Author: <a data-file="skyrock-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-slideshare-logo"></div>
+            <div class="class-name">icon-slideshare-logo</div>
+            <div class="author-name">Author: <a data-file="slideshare-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-socialcam-logo"></div>
+            <div class="class-name">icon-socialcam-logo</div>
+            <div class="author-name">Author: <a data-file="socialcam-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sonico-logo"></div>
+            <div class="class-name">icon-sonico-logo</div>
+            <div class="author-name">Author: <a data-file="sonico-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-sonico-social-logo"></div>
+            <div class="class-name">icon-sonico-social-logo</div>
+            <div class="author-name">Author: <a data-file="sonico-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-soundcloud-logo"></div>
+            <div class="class-name">icon-soundcloud-logo</div>
+            <div class="author-name">Author: <a data-file="soundcloud-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-spotbros-logo"></div>
+            <div class="class-name">icon-spotbros-logo</div>
+            <div class="author-name">Author: <a data-file="spotbros-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-spotify-logo"></div>
+            <div class="class-name">icon-spotify-logo</div>
+            <div class="author-name">Author: <a data-file="spotify-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-studivz-social-logo"></div>
+            <div class="class-name">icon-studivz-social-logo</div>
+            <div class="author-name">Author: <a data-file="studivz-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-stumbleupon-logo"></div>
+            <div class="class-name">icon-stumbleupon-logo</div>
+            <div class="author-name">Author: <a data-file="stumbleupon-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-symbaloo-logotype"></div>
+            <div class="class-name">icon-symbaloo-logotype</div>
+            <div class="author-name">Author: <a data-file="symbaloo-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tadaa-logotype"></div>
+            <div class="class-name">icon-tadaa-logotype</div>
+            <div class="author-name">Author: <a data-file="tadaa-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tagged-logotype"></div>
+            <div class="class-name">icon-tagged-logotype</div>
+            <div class="author-name">Author: <a data-file="tagged-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tagworld-logotype-symbol"></div>
+            <div class="class-name">icon-tagworld-logotype-symbol</div>
+            <div class="author-name">Author: <a data-file="tagworld-logotype-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-taringa-logo"></div>
+            <div class="class-name">icon-taringa-logo</div>
+            <div class="author-name">Author: <a data-file="taringa-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-telly-social-symbol"></div>
+            <div class="class-name">icon-telly-social-symbol</div>
+            <div class="author-name">Author: <a data-file="telly-social-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tencent-weibo-logo"></div>
+            <div class="class-name">icon-tencent-weibo-logo</div>
+            <div class="author-name">Author: <a data-file="tencent-weibo-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-threadless-logotype"></div>
+            <div class="class-name">icon-threadless-logotype</div>
+            <div class="author-name">Author: <a data-file="threadless-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tianji-logotype-symbol"></div>
+            <div class="class-name">icon-tianji-logotype-symbol</div>
+            <div class="author-name">Author: <a data-file="tianji-logotype-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-travbuddy-social-logotype"></div>
+            <div class="class-name">icon-travbuddy-social-logotype</div>
+            <div class="author-name">Author: <a data-file="travbuddy-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tribe-social-logotype"></div>
+            <div class="class-name">icon-tribe-social-logotype</div>
+            <div class="author-name">Author: <a data-file="tribe-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tripadvisor-logotype"></div>
+            <div class="class-name">icon-tripadvisor-logotype</div>
+            <div class="author-name">Author: <a data-file="tripadvisor-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tu-tv-logo"></div>
+            <div class="class-name">icon-tu-tv-logo</div>
+            <div class="author-name">Author: <a data-file="tu-tv-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tudou-logo"></div>
+            <div class="class-name">icon-tudou-logo</div>
+            <div class="author-name">Author: <a data-file="tudou-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tuenti-social-logo"></div>
+            <div class="class-name">icon-tuenti-social-logo</div>
+            <div class="author-name">Author: <a data-file="tuenti-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tumblr-logo"></div>
+            <div class="class-name">icon-tumblr-logo</div>
+            <div class="author-name">Author: <a data-file="tumblr-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-tv-tag-logotype-symbol"></div>
+            <div class="class-name">icon-tv-tag-logotype-symbol</div>
+            <div class="author-name">Author: <a data-file="tv-tag-logotype-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-twitpic-symbol"></div>
+            <div class="class-name">icon-twitpic-symbol</div>
+            <div class="author-name">Author: <a data-file="twitpic-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-twitter-logo"></div>
+            <div class="class-name">icon-twitter-logo</div>
+            <div class="author-name">Author: <a data-file="twitter-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-twitter-social-logotype"></div>
+            <div class="class-name">icon-twitter-social-logotype</div>
+            <div class="author-name">Author: <a data-file="twitter-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-twoo-logo"></div>
+            <div class="class-name">icon-twoo-logo</div>
+            <div class="author-name">Author: <a data-file="twoo-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-typophile-logo"></div>
+            <div class="class-name">icon-typophile-logo</div>
+            <div class="author-name">Author: <a data-file="typophile-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-ushi-logo"></div>
+            <div class="class-name">icon-ushi-logo</div>
+            <div class="author-name">Author: <a data-file="ushi-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-vampirefreaks-logo"></div>
+            <div class="class-name">icon-vampirefreaks-logo</div>
+            <div class="author-name">Author: <a data-file="vampirefreaks-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-viadeo-logo"></div>
+            <div class="class-name">icon-viadeo-logo</div>
+            <div class="author-name">Author: <a data-file="viadeo-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-viddy-logotype"></div>
+            <div class="class-name">icon-viddy-logotype</div>
+            <div class="author-name">Author: <a data-file="viddy-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-vimeo-social-logo"></div>
+            <div class="class-name">icon-vimeo-social-logo</div>
+            <div class="author-name">Author: <a data-file="vimeo-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-vine-logo"></div>
+            <div class="class-name">icon-vine-logo</div>
+            <div class="author-name">Author: <a data-file="vine-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-vine-logo-1"></div>
+            <div class="class-name">icon-vine-logo-1</div>
+            <div class="author-name">Author: <a data-file="vine-logo-1" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-vk-social-logotype"></div>
+            <div class="class-name">icon-vk-social-logotype</div>
+            <div class="author-name">Author: <a data-file="vk-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wayn-social-network-logo"></div>
+            <div class="class-name">icon-wayn-social-network-logo</div>
+            <div class="author-name">Author: <a data-file="wayn-social-network-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-weeworld-logo"></div>
+            <div class="class-name">icon-weeworld-logo</div>
+            <div class="author-name">Author: <a data-file="weeworld-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-weheartit-logo"></div>
+            <div class="class-name">icon-weheartit-logo</div>
+            <div class="author-name">Author: <a data-file="weheartit-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-weibo-social-logo"></div>
+            <div class="class-name">icon-weibo-social-logo</div>
+            <div class="author-name">Author: <a data-file="weibo-social-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-widbook-logo"></div>
+            <div class="class-name">icon-widbook-logo</div>
+            <div class="author-name">Author: <a data-file="widbook-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wikiloc-logo"></div>
+            <div class="class-name">icon-wikiloc-logo</div>
+            <div class="author-name">Author: <a data-file="wikiloc-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wikipedia-logo"></div>
+            <div class="class-name">icon-wikipedia-logo</div>
+            <div class="author-name">Author: <a data-file="wikipedia-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wikipedia-logotype-of-earth-puzzle"></div>
+            <div class="class-name">icon-wikipedia-logotype-of-earth-puzzle</div>
+            <div class="author-name">Author: <a data-file="wikipedia-logotype-of-earth-puzzle" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-wordpress-logo"></div>
+            <div class="class-name">icon-wordpress-logo</div>
+            <div class="author-name">Author: <a data-file="wordpress-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-xanga-logo"></div>
+            <div class="class-name">icon-xanga-logo</div>
+            <div class="author-name">Author: <a data-file="xanga-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-xanga-symbol"></div>
+            <div class="class-name">icon-xanga-symbol</div>
+            <div class="author-name">Author: <a data-file="xanga-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-xiami-social-symbol"></div>
+            <div class="class-name">icon-xiami-social-symbol</div>
+            <div class="author-name">Author: <a data-file="xiami-social-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-xing-social-logotype"></div>
+            <div class="class-name">icon-xing-social-logotype</div>
+            <div class="author-name">Author: <a data-file="xing-social-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-yelp-logo"></div>
+            <div class="class-name">icon-yelp-logo</div>
+            <div class="author-name">Author: <a data-file="yelp-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-youku-logo"></div>
+            <div class="class-name">icon-youku-logo</div>
+            <div class="author-name">Author: <a data-file="youku-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-yoursphere-logo"></div>
+            <div class="class-name">icon-yoursphere-logo</div>
+            <div class="author-name">Author: <a data-file="yoursphere-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-youtube-logotype"></div>
+            <div class="class-name">icon-youtube-logotype</div>
+            <div class="author-name">Author: <a data-file="youtube-logotype" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-youtube-symbol"></div>
+            <div class="class-name">icon-youtube-symbol</div>
+            <div class="author-name">Author: <a data-file="youtube-symbol" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-yupoo-logo"></div>
+            <div class="class-name">icon-yupoo-logo</div>
+            <div class="author-name">Author: <a data-file="yupoo-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+        <div class="glyph"><div class="glyph-icon flaticon-zorpia-logo"></div>
+            <div class="class-name">icon-zorpia-logo</div>
+            <div class="author-name">Author: <a data-file="zorpia-logo" href="http://www.freepik.com">Freepik</a> </div> 
+        </div>        
+        
+
+    </section>
+
+</body>
+</html>

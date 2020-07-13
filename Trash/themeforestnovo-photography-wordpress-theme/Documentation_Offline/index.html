@@ -1,0 +1,673 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Novo Theme Documentation</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i|Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="css/frontend-grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<!--[if IE]>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.0/mootools-yui-compressed.js"></script>
+      <script type="text/javascript" src="js/selectivizr-min.js"></script>
+      <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="all">
+		<div class="nav-button active"><div></div></div>
+		<header class="header active dark-bg fw-main-row">
+			<div class="logo-area"><a href="http://promo-theme.com/novo/"><img src="images/logo.png" alt="Novo"></a></div>
+			<div class="navigation">
+				<ul>
+					<li><a href="https://codex.wordpress.org/Installing_WordPress" target="_blank">Installing WordPress</a></li>
+					<li><a href="#installing_theme">Theme Installation</a></li>
+					<li><a href="#php_error">Theme Installation Errors</a></li>
+					<li><a href="#installing_theme_plugins">Theme Wizard Installation</a></li>
+					<li><a href="#theme_license_activation">Theme License Activation</a></li>
+                    <li><a href="#problems_license_activation">Problems with the Theme License Activation</a></li>
+					<li><a href="#installing_demo_content">Demo Content Installation</a></li>
+					<li><a href="#generate_thumbnails">Thumbnails Generating</a></li>
+					<li><a href="#initial_theme_setup">Initial Theme Setup</a></li>
+                    <li><a href="#one_page_settings">Home One Page Settings</a></li>
+                    <li><a href="#one_page_error">Theme doesn't Load</a></li>
+					<li><a href="https://vc.wpbakery.com/video-tutorials/" target="_blank">Visual Composer tutorials</a></li>
+					<li><a href="#child_theme">Customize theme / Child theme</a></li>
+					<li><a href="#add_new_post">Add new post</a></li>
+					<li><a href="#add_new_post_category">Add new post category</a></li>
+					<li><a href="#add_new_portfolio_item">Add new portfolio item</a></li>
+					<li><a href="#add_portfolio_cartegories">Add portfolio categories</a></li>
+					<li><a href="#portfolio_settings">Portfolio settings</a></li>
+					<li><a href="#page_settings">Page settings</a></li>
+					<li><a href="#banner_shortcode_settings">Banner shortcode settings</a></li>
+					<li><a href="#banner_item_settings">Banner item settings</a></li>
+					<li><a href="#theme_options">Theme Options</a></li>
+					<li><a href="#child_theme">Customize theme / Child theme</a></li>
+				</ul>
+			</div>
+			<div class="copyright">© Promo-themes, 2017.<br>All Rights Reserved.</div>
+		</header>
+		<section class="main-container active fw-main-row">
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="installing_theme">Theme Installation</div>
+				<p>Appearance > Themes<br>Next, click on the Add New</p>
+				<p><img src="images/imgs/2_1.png" alt=""></p>
+				<p>Click "Upload Theme"</p>
+				<p><img src="images/imgs/2_2.png" alt=""></p>
+				<p>And look for the file with the theme on your PC</p>
+				<p><img src="images/imgs/2_3.png" alt=""></p>
+				<p>If the topic is not activated then go Appearance > Themes<br>And click active</p>
+				<p><img src="images/imgs/2_4.png" alt=""></p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="php_error">Theme Installation Errors</div>
+                <p>During installation you can have some errors. Here the most popular errors you can get:</p>
+                <ul>
+                    <li><p><b>Error "Parse error: syntax error, unexpected ]"</b><br><strong>Solution:</strong> you need to change the PHP version on your hosting. <strong>Minimal version 5.4</strong>. You can change it in the PHP settings of your hosting.</p></li>
+                    <li><p><b>The package could not be installed. The theme is missing the style.css stylesheet</b> <br><strong>Solution:</strong> you've forgotten to unzip the main archive. It consist: theme, license, offline documentation and demo content.</p></li>
+                    <li><p><b>«Are You Sure You Want to Do This?»</b><br><strong>Solution:</strong> you need to increase your PHP parameter upload_max_filesize to 256M. You can change it in the PHP settings of your hosting.</p></li>
+                    <li><p><b>"Error Execution Failed"</b><br><strong>Solution:</strong> you need to increase the PHP parameter: max_execution_time to 400-600 sec. You can change in the PHP settings of your hosting. </p></li>
+                </ul>               
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="installing_theme_plugins">Theme Wizard Installation</div>
+				<p>When you first install the theme you'll see the Wizard guide installation.It will help you to install theme easy.Please follow these steps:</p>
+				<p><img src="images/imgs/install_1.png" alt=""></p>
+				<p><img src="images/imgs/install_2.png" alt=""></p>
+				<p><img src="images/imgs/install_3.png" alt=""></p>
+				<p><img src="images/imgs/install_4.png" alt=""></p>
+				<p><img src="images/imgs/install_5.png" alt=""></p>
+			</div>
+            <div class="doc-item fw-container">
+				<div class="h1 s-top" id="problems_license_activation">Problems with the Theme License Activation</div>
+				<p>In some reasons you can have problems with the Novo Theme activation:<br>
+                    1) <b>"Purchase code is wrong"</b> - check that you activate the <b>main theme</b> (not the child). After go Theme Options->License, insert you purchase code (check that it hasn't spaces after (you can mistake copy it with)), click <b>"Save"</b> and wait 5-7 sec. After that, click <b>"Register the code"</b>. Some servers have delay and waiting 5-7 sec. solve this problem.<br>
+                    2) <b>"Something wrong, please try later"</b> - you need to try to activate it later. If it won't help - the problem in incoming and outcoming queries from your hosting. The firewall on your hosting blocks it and our license system can't check your purchase code and send the status. In this situation you need to contact your hosting support to allow incoming and outcoming queries from the domain <b>promo-theme.com</b>.
+				</p>
+			</div>
+            
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="installing_demo_content">Demo Content Installation</div>
+                <p><b>Notice: YOU NEED TO ACTIVATE YOUR THEME BEFORE THE DEMO CONTENT INSTALLATION</b>
+				<p>Go to Tools->Demo Content Install</p><br>
+				<p><img src="images/imgs/demo_content_installation.png" alt=""></p>
+				<p><img src="images/imgs/demo_content_installation2.png" alt=""></p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="generate_thumbnails">Generate Thumbnails</div>
+				<p>After installing the demo content, you need to generate thumbnail images</p>
+				<img src="images/imgs/8_1.gif" alt="">
+			</div>
+            <div class="doc-item fw-container">
+				<div class="h1 s-top" id="initial_theme_setup">Initial Theme Setup</div>
+				<p>Ok, so far we have installed the theme, we have installed the plugins and imported the demo data, whats next?</p>
+				<p>The final step in getting your new theme setup and ready for you to edit as you wish is to setup your home page and menu. To begin, head to Settings > Reading, here you will need to set your Front Page.</p>
+				<p>By default WP is set to show your latest posts, however to make your theme just like our demo you should select a static front page from the pages provided in the demo data.</p>
+				<img src="images/imgs/6_1.gif" alt="">
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="one_page_settings">Home One Page Settings</div>
+				<p>Here are some Home One Page settings:</p>
+				<p><b>Social icons on the left side:</b> </p><p> <img src="images/imgs/One_Page_social_icon.png" alt=""></p>
+                <p><b>Social icons in the footer:</b> </p><p> <img src="images/imgs/One_Page_social_icon2.png" alt=""></p>
+                <p><b>Category and About buttons on the right side:</b> </p><p> <img src="images/imgs/One_Page_about_category.png" alt=""></p>
+			</div>
+            <div class="doc-item fw-container">
+				<div class="h1 s-top" id="one_page_error">Theme doesn't Load after changes</div>
+				<p>Sometimes after Categories or Portfolio items deleting you can get this error (White Screen or "Formatting error")</p>
+				<p>This error says about NULL link which is stayed in the "Banner" shortcode after Categories or Portfolio items deleting.</p>
+                <p><b>Solution:</b> go to the Front page, click on the banner shortcode and click "Save" <img src="images/imgs/One_Page_error.png" alt=""></p>
+			</div>
+
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="add_new_post">Add new post</div>
+				<p>To create a new post, navigate to <strong>Posts > Add New</strong> from your WordPress admin panel.</p>
+				<img src="images/imgs/post1.png" alt="">
+				<p>In the text field, near the top of the screen, enter a title of your post. Also, you can add a short description in the end of the title.</p>
+				<p>On the right side of the screen you will see a section named <strong>Categories</strong>. Here you can select the categories that you would like to add this post to. If you would like to create a new category, click on the <strong>+ Add New Category</strong> link. A text field will appear in which you can enter a category name, and then click <strong>Add New Category</strong>.</p>
+				<img src="images/imgs/post2.png" alt="">
+				<p>On the right side of the screen you will see a section named <strong>Post settings</strong>. where you can enter your video URL (YouTube, Vimeo, your own .mp4), and section named <strong>Featured Image</strong>, where you can set featured image for your post.</p>
+				<img src="images/imgs/post3.png" alt="">
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="add_new_post_category">Add new post category</div>
+				<p>To creat a new category, navigate to <strong>Posts > Categories</strong> from your WordPress admin panel. Here you can add name, slug, parent category, description and image of your category and then click <strong>Add New Category</strong> in the end of the title.</p>
+				<img src="images/imgs/post4.png" alt="">
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="add_new_portfolio_item">Add new portfolio item</div>
+				<p>To create a new portfolio item you should navigate to <strong>Portfolio > Add new</strong> from your WordPress admin panel.</p>
+				<img src="images/imgs/project1.png" alt="">
+				<p>Enter a title for your portfolio item in the text field near the top of the page.<br>On the right side of the screen you will see a section named <strong>Portfolio Categories</strong>. Here you can select the categories that you would like to add this portfolio item to or you can create a new category, click on the <strong>+ Add New Category</strong> link. </p>
+				<img src="images/imgs/project2.png" alt="">
+				<p>Under the <strong>Portfolio Categories</strong> section are the <strong>Project settings,</strong> <strong>Gallery</strong> and <strong>Project Cover Image</strong> sections.</p>
+				<p>In the <strong>Project settings</strong> section you can choose the style of your portfolio. It can be:</p>
+				<ul>
+					<li><strong>Default</strong> - Select this template if you would like to create a standard page with your content inside the grid.</li>
+					<li><strong>Grid</strong> - Set a predefined size for the space between the content layout and the sidebar layout for this page.</li>
+					<li><strong>Slider</strong> - if you wish to have a slider on the top of your page, copy and paste the slider shortcode here.</li>
+					<li><strong>Masonry</strong> - Select this template to display a list of your blog posts on the page. The blog list will be displayed in a Masonry type grid.</li>
+					<li><strong>Horizontal</strong> - Select this template to display a list of your blog posts on this page. The blog list will be displayed in the Standard layout (post info text located underneath the featured image).</li>
+				</ul>
+				<p>Also, in the <strong>Project settings</strong> section you can choose a type of your <strong>Project Image</strong>, which can be Default, Full or Adaptive, and you can enter your video URL (YouTube, Vimeo, your own .mp4) in <strong>Video url</strong> section.  </p>
+				<img src="images/imgs/project3.png" alt="">
+				<p>In the <strong>Gallery</strong> section you can set gallery images in two ways. The first is to upload files by simply dragging or selecting files. The second is choosing images from media library. <br>Then click the <strong>Add to gallery</strong> button.</p>
+				<img src="images/imgs/project4.png" alt="">
+				<p>In the <strong>Project Cover Image</strong> section, you can set an image to be displayed for this item  on portfolio lists the same way like you did in <strong>Gallery</strong> section.</p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="add_portfolio_cartegories">Add portfolio categories</div>
+				<p>To creat a new category, navigate to <strong>Portfolio > Categories</strong> from your WordPress admin panel. Here you can add name, slug, parent category, description and image of your category and then click <strong>Add New Category</strong> in the end of the title.</p>
+				<img src="images/imgs/project5.png" alt="">
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="portfolio_settings">Portfolio settings</div>
+				<p>To change settings of your portfolio, navigate to <strong>Pages > All pages</strong> from your WordPress admin panel.</p>
+				<p>On the right side of the screen you will see a section named <strong>Portfolio</strong>. Here you can select different settings if it is necessary.</p>
+				<img src="images/imgs/project6.png" alt="">
+				<h2>General</h2>
+				<img src="images/imgs/project7.png" alt="">
+				<p>In this section you can choose:</p>
+				<ul>
+					<li>Count items</li>
+					<li>Type</li>
+				</ul>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>grid</p>
+						<img src="images/imgs/project8.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>masonry</p>
+						<img src="images/imgs/project9.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>flow</p>
+						<img src="images/imgs/project10.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>horizontal</p>
+						<img src="images/imgs/project11.png" alt="">
+					</div>
+				</div>
+				<ul>
+					<li>Colums</li>
+				</ul>
+				<p>Choose a number of columns for the page, each column in the list can be scrolled through individually and assigned a specific category.</p>
+				<ul>
+					<li>Hover animation</li>
+				</ul>
+				<p>Choose an animated effect for hovered items.</p>
+				<ul>
+					<li>Filter buttons</li>
+				</ul>
+				<p>Set this option to "On to enable a category filter above the portfolio list.</p>
+				<ul>
+					<li>
+						Filter button align
+						<ul>
+							<li>Left</li>
+							<li>Center</li>
+							<li>Right</li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>Navigation</li>
+				</ul>
+				<p>You can enter a navigation  for this menu item.  It can be: none</p>
+				<ul>
+					<li>Load more</li>
+					<li>Pagination</li>
+				</ul>
+				<ul>
+					<li>Popup mode</li>
+				</ul>
+				<p>When this option is on, your animations are opened above the page:</p>
+				<img src="images/imgs/project12.png" alt="">
+				<p>When this option is off, your animations are opened in project page.</p>
+				<img src="images/imgs/project13.png" alt="">
+				<h2>Fields</h2>
+				<img src="images/imgs/project14.png" alt="">
+				<ul>
+					<li>Heading</li>
+					<li>Description</li>
+				</ul>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>When heading and description are on</p>
+						<img src="images/imgs/project15.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>When heading and description are off</p>
+						<img src="images/imgs/project16.png" alt="">
+					</div>
+				</div>
+				<h2>Sorting</h2>
+				<img src="images/imgs/project17.png" alt="">
+				<ul>
+					<li>Order by</li>
+				</ul>
+				<p>Choose how you would like to order your portfolio items.</p>
+				<ul>
+					<li>Order</li>
+				</ul>
+				<p>Choose between ascending and descending order.</p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="page_settings">Page settings</div>
+				<h2>Page Attributes</h2>
+				<p>When creating a new page, one of the first things you will probably want to do is to choose an appropriate template for your page. To this,  create a new page by going to <strong>Pages > Add new</strong>, and locate the <strong>Page Attributes</strong> section on the right side of the screen. It comes with a variety of page templates to choose from: <strong>Landing Page, Coming soon Page, Default Template</strong>.</p>
+				<img src="images/imgs/page1.png" alt="">
+				<ul>
+					<li><strong>Landing Page</strong> - Select this template to create a page with a single focused objective.</li>
+					<li><strong>Coming Soon Page</strong> - Choose this template to create a page with no header or footer.</li>
+					<li><strong>Default Template</strong> - Select this template if you would like to create a standard page with your content inside the grid.</li>
+				</ul>
+				<p>To start adding elements to your page, you can click on the Add Element button.</p>
+				<img src="images/imgs/page2.png" alt="">
+				<p>Finally, click the <strong>Publish</strong> button in the upper right section of the page. (If you made some changes on an already published page, you will see an <strong>Update</strong> button instead).</p>
+				<img src="images/imgs/page3.png" alt="">
+				<h2>Page Settings</h2>
+				<ul>
+					<li>Site color mode</li>
+				</ul>
+				<p>Set  the base color of your theme  for certain page. It can be default / light / dark.</p>
+				<ul>
+					<li>Header color mode</li>
+				</ul>
+				<p>Here you can choose a header style to be applied to the header on this page. The "Light" header style displays white navigation text and the "Light" logo version, while the "Dark" header style displays black navigation text and the "Dark" logo version,  "Default" If you wish to use the default colors and logo.</p>
+				<ul>
+					<li>Header style</li>
+				</ul>
+				<p>Choose a header type to use on this certain page. It can be default /side / logo left / logo centered.</p>
+				<ul>
+					<li>Navigation type</li>
+				</ul>
+				<p>Choose a header type to use on this certain  page. It can be: default</p>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Disabled</p>
+						<img src="images/imgs/page4.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Hidden menu</p>
+						<img src="images/imgs/page5.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Visible menu</p>
+						<img src="images/imgs/page6.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Full screen menu</p>
+						<img src="images/imgs/page7.png" alt="">
+					</div>
+				</div>
+				<ul>
+					<li>Navigation item hover style</li>
+				</ul>
+				<p>Choose a navigation item hover style to use on this certain  page.</p>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6"><img src="images/imgs/page8.png" alt=""></div>
+					<div class="fw-col-xs-12 fw-col-sm-6"><img src="images/imgs/page9.png" alt=""></div>
+				</div>
+				<ul>
+					<li>Header container</li>
+				</ul>
+				<p>Choose a header container to use on this certain  page. It can be default / center container / full witdh.</p>
+				<ul>
+					<li>Header space</li>
+				</ul>
+				<p>You can on / off this option.</p>
+				<ul>
+					<li>Footer</li>
+				</ul>
+				<p>There are three  types of this setting: show (when your footer open above the page) / hide ( when your footer  open in project page) and default.</p>
+				<ul>
+					<li>Social buttons in footer</li>
+				</ul>
+				<p>default show hide</p>
+				<ul>
+					<li>Featured Image</li>
+				</ul>
+				<p>Here you can  set a featured image which will be displayed for this post on blog list pages.</p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="banner_shortcode_settings">Banner shortcode settings</div>
+				<img src="images/imgs/banner1.png" alt="">
+				<h2>General</h2>
+				<ul>
+					<li>External indent</li>
+				</ul>
+				<p>This applies to portfolio lists. If you wish to take viewers to an external site once they click on this portfolio item, enter its full URL here. If you enter a URL in this field, when you click on this portfolio item in the portfolio list, instead of opening the portfolio item it will open the URL you entered.</p>
+				<ul>
+					<li>Carousel navigation</li>
+				</ul>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>on</p>
+						<img src="images/imgs/banner2.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>off</p>
+						<img src="images/imgs/banner3.png" alt="">
+					</div>
+				</div>
+				<ul>
+					<li>Infinite loop</li>
+				</ul>
+				<p>Restart the slider automatically as it passes the last slide.</p>
+				<ul>
+					<li>Transition speed</li>
+				</ul>
+				<p>Speed at which next slide comes between pages on your website.</p>
+				<ul>
+					<li>Autoplay slides</li>
+				</ul>
+				<p>Set this option to "On" if you would like the slider changes slides automatically.</p>
+				<ul>
+					<li>Autoplay speed</li>
+				</ul>
+				<p>Choose the speed for changing slides  automatically.</p>
+				<ul>
+					<li>Extra class</li>
+				</ul>
+				<p>If you wish to style a particular content element differently, you can use this field to add an extra class name to that element.</p>
+				<ul>
+					<li>Adaptive height / height</li>
+				</ul>
+				<p>You can choose an adaptive height or set your own one.</p>
+				<ul>
+					<li>About block</li>
+				</ul>
+				<img src="images/imgs/banner4.png" alt="">
+				<ul>
+					<li>Social buttons / Social buttons color</li>
+				</ul>
+				<img src="images/imgs/banner5.png" alt="">
+				<ul>
+					<li>Show categories</li>
+				</ul>
+				<img src="images/imgs/banner6.png" alt="">
+				<ul>
+					<li>Default color</li>
+				</ul>
+				<img src="images/imgs/banner7.png" alt="">
+				<h2>Navigation</h2>
+				<img src="images/imgs/banner8.png" alt="">
+				<ul>
+					<li>Navigation arrows / Arrow color</li>
+				</ul>
+				<p>Set this option to "On" to display navigation arrows on the slider and set the arrow color.</p>
+				<ul>
+					<li>Arrow position</li>
+				</ul>
+				<p>You can change the arrow position from left to right botton here.</p>
+				<ul>
+					<li>Pagination position / Pagination color</li>
+				</ul>
+				<p>If the pagination option is on, you can choose the pagination position, which can be left or right botton and set the pfgination color.</p>
+				<ul>
+					<li>Pause on hover</li>
+				</ul>
+				<p>Slider pause on mouse hover.</p>
+				<h2>Social links</h2>
+				<img src="images/imgs/banner9.png" alt="">
+				<p>Here you can add social links and social icons.</p>
+				<h2>About block</h2>
+				<img src="images/imgs/banner10.png" alt="">
+				<ul>
+					<li>Button label</li>
+				</ul>
+				<p>Enter a label for the button.</p>
+				<ul>
+					<li>Type</li>
+				</ul>
+				<p>Choose the type. It can be «content» or «custom link».</p>
+				<p>If the type is «content», you can add:</p>
+				<p>URL<br>about image<br>heading / text</p>
+				<p>If the type is «custom link» you can select</p>
+				<img src="images/imgs/banner11.png" alt="">
+				<h2>Categories</h2>
+				<img src="images/imgs/banner12.png" alt="">
+				<ul>
+					<li>Button label</li>
+				</ul>
+				<p>Enter a label for the button.</p>
+				<ul>
+					<li>Categories source</li>
+				</ul>
+				<p>Choose the categories source whether you would like to use.</p>
+				<ul>
+					<li>Categories</li>
+				</ul>
+				<p>Choose the categorise.</p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="banner_item_settings">Banner item settings</div>
+				<img src="images/imgs/banner13.png" alt="">
+				<h2>General</h2>
+				<img src="images/imgs/banner14.png" alt="">
+				<ul>
+					<li>Background image</li>
+				</ul>
+				<p>Set a background image for the banner.</p>
+				<ul>
+					<li>Background video url</li>
+				</ul>
+				<p>You can enter your video URL (YouTube, Vimeo, your own .mp4).</p>
+				<ul>
+					<li>Heading</li>
+					<li>Text</li>
+					<li>Link button</li>
+				</ul>
+				<p>If this option is on, you can:</p>
+				<ul>
+					<li>Select URL</li>
+					<li>Add your own link text.</li>
+				</ul>
+				<img src="images/imgs/banner15.png" alt="">
+				<p>And then you can set another options  in Button customize section.</p>
+				<img src="images/imgs/banner16.png" alt="">
+				<h2>Design</h2>
+				<img src="images/imgs/banner17.png" alt="">
+				<ul>
+					<li>Inner shadow</li>
+				</ul>
+				<p>Set this option to "On" to enable a shadow effect on the banner.</p>
+				<ul>
+					<li>color overlay</li>
+				</ul>
+				<p>Select a color for the image hover overlay.</p>
+				<ul>
+					<li>text color</li>
+				</ul>
+				<p>You can choose white or custom color here.</p>
+				<ul>
+					<li>heading size</li>
+				</ul>
+				<p>Choose a heading size for the banner item.</p>
+				<ul>
+					<li>heading style</li>
+				</ul>
+				<p>Choose a heading style, which can be <strong>with serial number</strong> or <strong>decor line</strong>, for the banner item.</p>
+				<ul>
+					<li>text align</li>
+				</ul>
+				<p>Choose a text alignment, which can be <strong>right</strong>, <strong>left</strong> or <strong>centered</strong>, for the banner item.</p>
+				<ul>
+					<li>text vertical align</li>
+				</ul>
+				<p>Choose a text vertical alignment, which can be <strong>top</strong>, <strong>middle</strong> or <strong>bottom</strong>, for the banner item.</p>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="theme_options">Theme Options</div>
+				<p>This section of the User Guide provides a comprehenisve overview of all the settings available in the <strong>Theme Options</strong> section of your WordPress admin panel. The settings found here are applied globally and will affect all pages on your website.</p>
+				<h2>General</h2>
+				<img src="images/imgs/theme-settings1.png" alt="">
+				<ul>
+					<li><strong>Site color mode</strong> - set  the base color of your theme  for all pages</li>
+					<li><strong>Copyright text</strong> - write your own copyright text here</li>
+					<li><strong>Main Color</strong> - choose the main color of the theme</li>
+					<li><strong>Image download link on popup</strong> - there are two types of this setting: show (when your images open above the page) / hide ( when your images open in project page)</li>
+					<li><strong>Right click disable</strong> -  is one of the methods you can use to deter casual theft and write your message, which will use in this way</li>
+					<li><strong>Protected Page Message</strong> - write your own protect message for your site</li>
+				</ul>
+				<h2>Preloader</h2>
+				<img src="images/imgs/theme-settings2.png" alt="">
+				<p>You can on/off this option. If this option is on, at first, choose <strong>Preloader type</strong> (words or image).<br>Then write static word and dinamic words for words type and choose a default logo image to display for image type.</p>
+				<h2>Logo</h2>
+				<img src="images/imgs/theme-settings3.png" alt="">
+				<ul>
+					<li><strong>Logo text</strong> - Set this option to "Yes" to hide the logo from your website.</li>
+					<li><strong>Logo Image - Normal</strong> - Upload a default logo for your website.</li>
+					<li><strong>Logo Image - Light</strong> - Upload a logo to be displayed on the "Light" header skin.</li>
+					<li><strong>Logo Image - Dark</strong> - Upload a logo to be displayed on the "Dark" header skin.</li>
+					<li><strong>Logo max width</strong> - Install logo max width.</li>
+				</ul>
+				<h2>Header Style</h2>
+				<ul>
+					<li><strong>Header style</strong> - Select the default header you would like to use</li>
+				</ul>
+				<img src="images/imgs/theme-settings4.png" alt="">
+				<ul>
+					<li><strong>Header container</strong> - Choose the type of header container: center container or full witdh</li>
+					<li><strong>Header color mode</strong> - Choose the type of header: dark or light</li>
+					<li><strong>Header Background Color</strong> - Set a background color for the vertical area</li>
+					<li><strong>Header Text Color</strong> - Set a header text color</li>
+					<li><strong>Cart / Search</strong> - You can on/ off this options if it is necessary</li>
+				</ul>
+				<img src="images/imgs/theme-settings5.png" alt="">
+				<h2>Navigation</h2>
+				<ul>
+					<li>Navigation type</li>
+				</ul>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Disabled</p>
+						<img src="images/imgs/page4.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Hidden menu</p>
+						<img src="images/imgs/page5.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Visible menu</p>
+						<img src="images/imgs/page6.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Full screen menu</p>
+						<img src="images/imgs/page7.png" alt="">
+					</div>
+				</div>
+				<ul>
+					<li>Navigation item hover style</li>
+				</ul>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6"><img src="images/imgs/page8.png" alt=""></div>
+					<div class="fw-col-xs-12 fw-col-sm-6"><img src="images/imgs/page9.png" alt=""></div>
+				</div>
+				<h2>Typography</h2>
+				<p>Set typography styles for the menu items.</p>
+				<h2>Social Buttons</h2>
+				<img src="images/imgs/theme-settings6.png" alt="">
+				<p>Social buttons in footer - You can on / off this option<br>If this option is on, you can:</p>
+				<p>Add social button and fill out the title with Social icon and Link</p>
+				<h2>Footer</h2>
+				<ul>
+					<li><strong>Footer</strong> - there are two types of this setting: show (when your footer open above the page) / hide ( when your footer  open in project page)</li>
+					<li><strong>Logo max width</strong> - Set a max size for the logo</li>
+					<li><strong>Footer Background color</strong> - Set a background color for the footer top</li>
+					<li><strong>Footer Text Color</strong> - Set a color for the footer</li>
+					<li><strong>Footer col</strong> - 1,2,3</li>
+				</ul>
+				<h2>404 Page</h2>
+				<p>Upload a background image, text color, heading color, heading, desc for the 404 page</p>
+				<img src="images/imgs/theme-settings7.png" alt="">
+				<h2>Coming soon page</h2>
+				<p>Upload a background image, text color, heading color, heading, subscribe form desc for the coming soon page.</p>
+				<img src="images/imgs/theme-settings8.png" alt="">
+				<h2>Portfolio Post</h2>
+				<ul>
+					<li>Style project page</li>
+				</ul>
+				<p>Choose a default type for portfolio single pages.</p>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Slider</p>
+						<img src="images/imgs/theme-settings9.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Masonry</p>
+						<img src="images/imgs/theme-settings10.png" alt="">
+					</div>
+				</div>
+				<div class="fw-row">
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Grid</p>
+						<img src="images/imgs/theme-settings11.png" alt="">
+					</div>
+					<div class="fw-col-xs-12 fw-col-sm-6">
+						<p>Horizontal</p>
+						<img src="images/imgs/theme-settings12.png" alt="">
+					</div>
+				</div>
+				<ul>
+					<li>Portfolio image</li>
+				</ul>
+				<p>Set proportions for your featured images on portfolio archive pages.</p>
+				<ul>
+					<li>Show date</li>
+				</ul>
+				<p>Set this option to "Show" if you would like to display the publication dates of your posts.</p>
+				<img src="images/imgs/theme-settings13.png" alt="">
+				<ul>
+					<li>Show like</li>
+				</ul>
+				<p>Set this option to "Yes" to display the number of likes in the post info section</p>
+				<img src="images/imgs/theme-settings14.png" alt="">
+				<h2>Blog Post</h2>
+				<ul>
+					<li>Blog feature image</li>
+				</ul>
+				<p>Set this option to "Show" to display your portfolio featured images.</p>
+				<ul>
+					<li>Show date</li>
+				</ul>
+				<p>Set this option to "Show"  if you would like to display the publication dates of your posts.</p>
+				<ul>
+					<li>Show like</li>
+				</ul>
+				<p>Set this option to "Show" to display the number of likes in the post info section.</p>
+				<h2>Import / Export</h2>
+				<p>You can use this panel to export and import your theme options. Please note that if you import theme options, your current options will be rewriten.</p>
+				<ul>
+					<li><strong>Export</strong> - Copy the code from this field and save it to a textual file to export your options. Save that textual file somewhere so you can later use it to import options if necessary.</li>
+					<li><strong>Import</strong> - To import options, just paste the code you previously saved from the "Export" field into this field, and then click the "Import" button.</li>
+				</ul>
+				<h2>Google Maps API</h2>
+				<p>Insert your Google Maps API key here. You can find instructions on how to create a Google Maps API key here.</p>
+				<h2>Potrfolio style</h2>
+				<ul>
+					<li>Portfolio style</li>
+					<li>Cols count</li>
+				</ul>
+			</div>
+			<div class="doc-item fw-container">
+				<div class="h1 s-top" id="child_theme">Customize theme / Child theme</div>
+				<p>To make any changes to the theme files use a child theme, or when you update your changes to the theme files may be lost</p>
+                <p><b>Child Theme is included in the main archive</b></p>
+				<p><a href="https://codex.wordpress.org/Child_Themes" target="_blank">Child Themes documentation in WP codex</a></p>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/prism.js"></script>
+</body>
+</html>
