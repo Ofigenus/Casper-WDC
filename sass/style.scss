@@ -165,6 +165,10 @@ p {
 #fp-nav ul li p {
   color: #F25F29;
 }
+#section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7{
+  position: relative;
+  margin-bottom: 50px;
+}
 #section0 {
     background: url(img/photo-1444093826349-9ce8c622f4f3.jpg);
     background-position: center;
@@ -442,7 +446,11 @@ $duration: map-get($elastic, 'duration');
         width: 50%;
     }
 }
-
+.intro {
+  position: absolute;
+  left: 25%;
+  top: 36%;
+}
 .intro .site-name,
 .intro .head-tag {
   text-transform: uppercase;
@@ -452,8 +460,6 @@ $duration: map-get($elastic, 'duration');
   position: relative;
   margin: 0 auto;
   transform: none;
-  left: 20%;
-  padding-top: 25%;
 }
 
 .intro .site-name {
@@ -479,7 +485,35 @@ $duration: map-get($elastic, 'duration');
   font-size: 30px;
   color: #333333;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
+
+#section1 .second-block-title::after {
+  content: "";
+  border: 2px #F25F29 solid;
+  height: 0;
+  display: block;
+  max-width: 260px;
+  margin-top: 45px;
+}
+
+.brands {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+background-color: #0000002e;
+width: 100%;
+}
+
+.brands img {
+  max-height: 30px;
+}
+
+.brands-item {
+  align-items: center;
+  justify-content: center;
+}
+
 .help-block {
   flex-wrap: wrap;
   position: relative;
