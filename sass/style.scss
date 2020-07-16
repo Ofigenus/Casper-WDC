@@ -183,19 +183,28 @@ p {
 }
 
 #section2 {
-    background-color: rgb(165, 104, 104);
+    background-color: #262626;
+    height: 600px;
 }
-
+#section2 .second-block-title, #section4, #section4 .second-block-title {
+ color: #fff;
+} 
 #section3 {
-    background-color: #7d68b0;
+    background-color: #fff;
 }
 
 #section4 {
     background-color: #022859;
+    padding-bottom: 50px;
 }
 
 #section5 {
-    background-color: #94E1F2;
+    background-color: #fff;
+}
+
+footer {
+  background-color: #262626;
+    height: 300px;
 }
 
 .indicators {
@@ -481,20 +490,22 @@ $duration: map-get($elastic, 'duration');
   max-width: 260px;
   margin-top: 45px;
 }
-#section1 .second-block-title {
+.second-block-title {
   font-size: 30px;
   color: #333333;
   margin-bottom: 50px;
-  margin-top: 50px;
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-#section1 .second-block-title::after {
+.second-block-title::after {
   content: "";
   border: 2px #F25F29 solid;
   height: 0;
   display: block;
-  max-width: 260px;
-  margin-top: 45px;
+  max-width: 150px;
+  margin: 45px auto 0 auto;
 }
 
 .brands {
@@ -549,7 +560,7 @@ width: 100%;
 }
 .container-bock:hover {
   border-top: 4px solid #46a5d7;
-    background-color: #1d2033;
+    background-color: #262626;
     border-radius: 0;
     
 }
