@@ -47,7 +47,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   /* Preferred icon size */
   display: inline-block;
   line-height: 1;
@@ -56,6 +56,7 @@
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
+  color: #fbb315;
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
@@ -233,7 +234,7 @@ svg {
 svg path {
   stroke-width: 18;
   stroke-linecap: round;
-  stroke: #E7EAC6;
+  stroke: #f25f29;
   fill: none;
   -webkit-transition: all .5s ease-in-out;
   -webkit-transition: all .6s ease-in-out;
@@ -451,6 +452,10 @@ svg path {
   letter-spacing: 8px;
   padding-top: 20px; }
 
+.intro .head-tag span {
+  display: block;
+  padding-top: 20px; }
+
 #section0 .head-tag::after {
   content: "";
   border: 2px #F25F29 solid;
@@ -501,7 +506,7 @@ svg path {
 .custom-header-icon-col {
   display: table-cell;
   vertical-align: middle;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 18px;
   text-transform: uppercase; }
 
@@ -515,10 +520,11 @@ svg path {
   font-size: 16px;
   margin-bottom: 20px;
   position: relative;
-  color: #333; }
+  color: #717885; }
 
 .custom-header {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee; }
 
 .container-bock {
   padding: 35px 20px 60px !important;
@@ -530,12 +536,9 @@ svg path {
 
 .container-bock:hover {
   border-top: 4px solid #46a5d7;
-  background-color: #262626;
+  -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
   border-radius: 0; }
-
-.container-bock:hover .custom-header-icon-col,
-.container-bock:hover .text-column ul li {
-  color: white; }
 
 .container-bock .btn-wrapper {
   display: block;
@@ -560,8 +563,140 @@ svg path {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
-  background: #fbb315; }
+  color: #fff;
+  background: #46a5d7;
+  -webkit-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear; }
+
+.container-bock .btn-yellow:hover {
+  background: #3b8bb6; }
 
 .container-bock:hover .material-icons {
   color: #ff8a00; }
+
+#section2 .tech-greed .techimg {
+  background: url(img/technologis.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin: 10px; }
+
+#section2 .tech-greed .img1 {
+  width: 50px;
+  height: 50px;
+  background-position: -190px -50px; }
+
+#section2 .tech-greed .img2 {
+  width: 50px;
+  height: 50px;
+  background-position: 7px -200px; }
+
+#section2 .tech-greed .img3 {
+  width: 50px;
+  height: 50px;
+  background-position: -45px -200px; }
+
+#section2 .tech-greed .img4 {
+  width: 43px;
+  height: 50px;
+  background-position: -95px -200px; }
+
+#section2 .tech-greed .img5 {
+  width: 97px;
+  height: 50px;
+  background-position: -138px -200px; }
+
+#section2 .tech-greed .img6 {
+  width: 98px;
+  height: 50px;
+  background-position: -149px -150px; }
+
+#section2 .tech-greed .img7 {
+  width: 149px;
+  height: 50px;
+  background-position: 0px -150px; }
+
+#section2 .tech-greed .img8 {
+  width: 186px;
+  height: 50px;
+  background-position: 0px -100px; }
+
+#section2 .tech-greed .img9 {
+  width: 50px;
+  height: 50px;
+  background-position: -186px -100px; }
+
+#section2 .tech-greed .img10 {
+  width: 256px;
+  height: 50px;
+  background-position: 0px 0px; }
+
+#section2 .tech-greed .img11 {
+  width: 190px;
+  height: 50px;
+  background-position: 0px -50px; }
+
+.tech-text {
+  color: #fff; }
+
+.tech-text > p {
+  font-size: 25px;
+  text-transform: uppercase; }
+
+.tech-text > .tech-btn > button {
+  padding: 5px 30px;
+  font-size: 20px;
+  background: #46a5d7;
+  margin: 0 2px;
+  border: none;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+supported by Chrome, Opera and Firefox */ }
+
+.tech-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px 0; }
+
+.industries-ico > p {
+  border: 1px solid #fff;
+  padding: 30px; }
+
+.industries-ico, .industries-star, .industries-buis {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.industries-star {
+  background: #00bf72; }
+
+.industries-buis {
+  background: #F25F29; }
+
+.indastries-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.star-title, .busi-title {
+  font-size: 25px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0; }
