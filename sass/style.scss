@@ -121,12 +121,13 @@ abbr,acronym { border: 0;
 .header-top {
     
     height: 70px;
-    padding: 0 10px;
+    padding: 0 30px;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 12;
     box-sizing: border-box;
+    z-index: 12;
+    text-align: right;
 }
 
 .l-right {
@@ -231,7 +232,7 @@ footer {
 
 /* menu*/
 
-svg {
+/*svg {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -239,16 +240,16 @@ svg {
     top: 50%;
     left: 50%;
     z-index: 999;
-}
+}*/
 
-svg path {
+/*svg path {
     stroke-width: 18;
     stroke-linecap: round;
     stroke: #f25f29;
     fill: none;
     -webkit-transition: all .5s ease-in-out;
     transition: all .6s ease-in-out;
-}
+}*/
 
 #nav li {
 	display:inline-block;
@@ -346,18 +347,24 @@ $elastic: (
   duration: 400,
 );
 
+$menu: (
+  backgroundColor: rgb(0, 47, 77),
+  width: 200,
+);
+
 
 // get key
 $position: map-get($elastic, 'position');
 $width: map-get($elastic, 'width');
 $backgroundColor: map-get($elastic, 'backgroundColor');
 $duration: map-get($elastic, 'duration');
-
+$menu-bg: map-get($menu, 'backgroundColor');
+$menu-width: map-get($menu, 'width');
 // Start
 .navigation {
   position: fixed;
-  width: $width*1%;
-  height: 70px;
+  width: $menu-width+px;
+  height: 100%;
   top: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -378,7 +385,7 @@ $duration: map-get($elastic, 'duration');
     .navigation__inner {
       display: flex;
       align-items: center;
-      background-color: $backgroundColor;
+      background-color: $menu-bg;
       transform: translate(0, 0);
       transition: transform $duration*1ms linear, background-color 0s linear;
       &:after {
@@ -389,7 +396,7 @@ $duration: map-get($elastic, 'duration');
   }
 }
 .navigation__inner {
-  border-radius: 25px 0 0 25px;
+  border-radius: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -731,3 +738,86 @@ supported by Chrome, Opera and Firefox */
   height: 100%;
   padding: 20px 0;
 }
+
+
+
+
+
+
+
+#menu1 {
+  height: 100%;
+  position: fixed;
+  background-color: #FED057;
+  width: 300px;
+  transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateX(-100%);
+  left: 60px;
+  z-index: 999;
+}
+
+#menu1.expanded {
+  transform: translateX(0%);
+  left: 0px;
+}
+
+.menu-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#blob {
+  top: 0;
+  z-index: -1;
+  right: 60px;
+  transform: translateX(100%);
+  height: 100%;
+  position: absolute;
+}
+
+#blob-path {
+  height: 100%;
+  fill:  #FED057;
+}
+
+.hamburger {
+  right: 20px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;	
+}
+
+.hamburger .line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger .line:nth-child(2) {
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger .line:nth-child(3) {
+  bottom: 0;
+}
+
+#menu1 ul {
+  padding: 0;
+  list-style: none;
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  top: 10px;
+}
+
+#menu1 ul li {
+  color: #fff;
+  font-family: sans-serif;
+  padding: 20px 0;
+}
+
+
