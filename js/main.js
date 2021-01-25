@@ -1,7 +1,7 @@
 $(window).load(function(){
 	var height = window.innerHeight,
   x= 0, y= height/2,
-	curveX = 10,
+	curveX = 0,
 	curveY = 0,
 	targetX = 0,
 	xitteration = 0,
@@ -79,3 +79,4 @@ $(window).load(function(){
 	window.requestAnimationFrame(svgCurve);
 	
 });
+

@@ -1,0 +1,8 @@
+@media screen and (max-width: 400px) {
+    .phone {
+        display: flex !important;
+    }
+    #menu1 {
+        display: none !important;
+    }
+}

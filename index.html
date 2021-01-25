@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio site</title>
   <meta name="author" content="Alvaro Trigo Lopez" />
   <meta name="description" content="fullPage full-screen normal scrolling with autoScrolling." />
@@ -15,6 +16,8 @@
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <link rel="stylesheet" href="css/normolize.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <header>
   <div class="header-top clearfix" id="show">
@@ -65,7 +68,42 @@
     <svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
 		</svg>
-	</div>
+  </div>
+  
+  <div class="phone">
+		<nav>
+		  <input type="radio" id="item-1" checked name="menu" />
+		  <label for="item-1">
+			<span>
+			  <i class="fas fa-home"></i>
+			</span>
+		  </label>
+		  <input type="radio" id="item-2" name="menu" />
+		  <label for="item-2">
+			<span>
+			  <i class="fas fa-upload"></i>
+			</span>
+		  </label>
+		  <input type="radio" id="item-3" name="menu" />
+		  <label for="item-3">
+			<span>
+			  <i class="far fa-comments"></i>
+			</span>
+		  </label>
+		  <input type="radio" id="item-4" name="menu" />
+		  <label for="item-4">
+			<span>
+			  <i class="fas fa-cog"></i>
+			</span>
+		  </label>
+		  <div class="cursor">
+			
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.625 18.625" height="19.867" width="19.867"><path d="M0 0v18.625C.459 6.493 7.17.804 18.625 0z" fill-rule="evenodd"/></svg>
+			
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.625 18.625" height="19.867" width="19.867"><path d="M0 0v18.625C.459 6.493 7.17.804 18.625 0z" fill-rule="evenodd"/></svg>
+		  </div>
+		</nav>
+	  </div>
 
 </header>
 
