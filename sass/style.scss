@@ -898,6 +898,9 @@ nav {
   z-index: 1;
   transition: transform 300ms ease;
   box-shadow: 2px 2px 14px -6px rgba(0,0,0,0.75);
+  display: flex;
+    padding-top: 11px;
+    justify-content: space-between;
   
   svg {
     position: absolute;
@@ -938,3 +941,19 @@ nav {
   60% { transform: scale(1.2)}
 }
 
+.cursor span {
+  width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.cursor .mr1 {
+  background-image: url(img/menu-ml.png);
+  margin-left: -12px;
+}
+.cursor .ml2 {
+  background-image: url(img/menu-mr.png);
+  margin-right: -12px;
+}

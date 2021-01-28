@@ -865,7 +865,14 @@ nav {
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
   -webkit-box-shadow: 2px 2px 14px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 14px -6px rgba(0, 0, 0, 0.75); }
+  box-shadow: 2px 2px 14px -6px rgba(0, 0, 0, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 11px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
   .cursor svg {
     position: absolute;
     top: 12px;
@@ -919,3 +926,17 @@ nav {
   60% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2); } }
+
+.cursor span {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.cursor .mr1 {
+  background-image: url(img/menu-ml.png);
+  margin-left: -12px; }
+
+.cursor .ml2 {
+  background-image: url(img/menu-mr.png);
+  margin-right: -12px; }
