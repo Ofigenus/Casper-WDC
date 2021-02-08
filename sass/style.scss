@@ -754,12 +754,25 @@ supported by Chrome, Opera and Firefox */
 #menu1.expanded {
   transform: translateX(0%);
   left: 0px;
+  opacity: 1;
 }
 
 .menu-inner {
   width: 100%;
   height: 100%;
   position: relative;
+
+   ul li a {
+     font-size: 18px;
+     padding: 20px 0;
+     display: block;
+   
+     &:hover {
+      color: #262626;
+      text-decoration: none;
+    }
+    }
+   
 }
 
 #blob {
@@ -807,13 +820,14 @@ supported by Chrome, Opera and Firefox */
   margin-left: 10%;
   position: absolute;
   top: 10px;
+
+ li {
+    color: #fff;
+    font-family: sans-serif;
+    padding:0;
+  }
 }
 
-#menu1 ul li {
-  color: #fff;
-  font-family: sans-serif;
-  padding: 20px 0;
-}
 
 
 $primary: #fff;
@@ -956,4 +970,10 @@ nav {
 .cursor .ml2 {
   background-image: url(img/menu-mr.png);
   margin-right: -12px;
+}
+
+.case {
+  padding-bottom: 100px;
+
+  
 }
