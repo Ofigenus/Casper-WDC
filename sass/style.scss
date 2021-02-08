@@ -69,8 +69,12 @@ body, html {
 }
 
 a{
-	text-decoration:none;
-	color: #fff;
+	text-decoration: none;
+  color: #fff;
+  
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 table {
@@ -622,62 +626,52 @@ color: #ff8a00;
   margin: 10px;
 }
 
-#section2 .tech-greed .img1 {
+#section2 .tech-greed  {
+  .techimg {
   width: 50px;
   height: 50px;
-  background-position: -190px -50px;
-}
-#section2 .tech-greed .img2 {
-  width: 50px;
-  height: 50px;
+  }
+  .img1{
+    background-position: -190px -50px;
+  }
+
+.img2{
   background-position: 7px -200px;
 }
-#section2 .tech-greed .img3 {
-  width: 50px;
-  height: 50px;
+.img3 {
   background-position: -45px -200px;
 }
-
-#section2 .tech-greed .img4 {
+.img4 {
   width: 43px;
-  height: 50px;
   background-position: -95px -200px;
 }
-
-#section2 .tech-greed .img5 {
+.img5 {
   width: 97px;
-  height: 50px;
   background-position: -138px -200px;
 }
-#section2 .tech-greed .img6 {
+.img6 {
   width: 98px;
-  height: 50px;
   background-position: -149px -150px;
 }
-#section2 .tech-greed .img7 {
+.img7 {
   width: 149px;
-  height: 50px;
   background-position: 0px -150px;
 }
-#section2 .tech-greed .img8 {
+.img8 {
   width: 186px;
-  height: 50px;
   background-position: 0px -100px;
 }
-#section2 .tech-greed .img9 {
-  width: 50px;
-  height: 50px;
+.img9 {
   background-position: -186px -100px;
 }
-#section2 .tech-greed .img10 {
+.img10 {
   width: 256px;
-  height: 50px;
   background-position: 0px 0px;
 }
-#section2 .tech-greed .img11 {
+.img11 {
   width: 190px;
-  height: 50px;
   background-position: 0px -50px;
+}
 }
 
 .tech-text {
@@ -975,5 +969,20 @@ nav {
 .case {
   padding-bottom: 100px;
 
-  
+  .case-title {
+    padding-bottom: 50px;
+
+    h3 {
+      padding-top: 15px;
+      font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }

@@ -1,3 +1,5 @@
+// desctop menu animation 
+
 $(window).load(function(){
 	var height = window.innerHeight,
   x= 0, y= height/2,
@@ -80,3 +82,33 @@ $(window).load(function(){
 	
 });
 
+
+// technologies animation on mous over
+
+$('.btn-tech-change').on('mouseover',function(){
+	var btnTech = $(this).attr('data-btn');
+	
+	if (btnTech == 'btn-frontend') {
+		$('.techimg[data-tech=frontend]').addClass("tech-zoom").removeClass('tech-zoom-of');
+
+		$('.techimg[data-tech=beck-end]').addClass("tech-zoom-of").removeClass('tech-zoom');
+		$('.techimg[data-tech=platforms]').addClass("tech-zoom-of").removeClass('tech-zoom');
+	}
+	if (btnTech == 'btn-beck-end') {
+		$('.techimg[data-tech=beck-end]').addClass("tech-zoom").removeClass('tech-zoom-of');
+
+		$('.techimg[data-tech=frontend]').addClass("tech-zoom-of").removeClass('tech-zoom');
+		$('.techimg[data-tech=platforms]').addClass("tech-zoom-of").removeClass('tech-zoom');
+	}
+
+	if (btnTech == 'btn-platforms') {
+		$('.techimg[data-tech=platforms]').addClass("tech-zoom").removeClass('tech-zoom-of');
+
+		$('.techimg[data-tech=frontend]').addClass("tech-zoom-of").removeClass('tech-zoom');
+		$('.techimg[data-tech=beck-end]').addClass("tech-zoom-of").removeClass('tech-zoom');
+	}
+});
+
+$('.btn-tech-change').on('mouseout',function(){
+	$('.techimg').removeClass('tech-zoom-of tech-zoom');
+});
