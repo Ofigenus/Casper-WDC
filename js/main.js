@@ -112,3 +112,26 @@ $('.btn-tech-change').on('mouseover',function(){
 $('.btn-tech-change').on('mouseout',function(){
 	$('.techimg').removeClass('tech-zoom-of tech-zoom');
 });
+
+$(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
