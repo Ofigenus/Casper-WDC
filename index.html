@@ -489,51 +489,55 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h2 class="">Let`s Discuss Your Ideas</h2>
+          <h2 class="contact-block-title">Let`s Discuss Your Ideas</h2>
           <p>
             Simply fill the form or email us at hi@s-pro.io
           </p>
         </div>
         <div class="col-6">
-          <form class="contact-form">
-            <div class="input-wrapper"><input type="text" class="input input--default" id="name" name="name"
-                placeholder="What is your name?" value=""></div>
-            <div class="input-wrapper"><input type="text" class="input input--default" id="email" name="email"
-                placeholder="Email" value=""></div>
-            <div class="switchRow">
-              <p class="switchRow__text">Phone/Skype</p><label class="switch"><input type="checkbox"
-                  class="switch__input"><span class="switch__slider"></span></label>
+          <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+            <p class="contact-form__description"></p>
+            <div class="contact-form__input-wrapper">
+                <input name="name" type="text" class="contact-form__input contact-form__input_name"
+                    placeholder="Введите ваше имя">
+                <div class="contact-form__error contact-form__error_name"></div>
             </div>
-            <div class="input-wrapper isCountry">
-              <div class="react-tel-input"><input type="tel" class="input input--default form-control"
-                  id="phone-form-control" value="+1" placeholder="Enter phone number">
-                <div class=" flag-dropdown" id="flag-dropdown" tabindex="0" role="button">
-                  <div class="selected-flag" title="United States: + 1">
-                    <div class="flag us">
-                      <div class="arrow"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+            <div class="contact-form__input-wrapper">
+                <input name="tel" type="tel" class="contact-form__input contact-form__input_tel"
+                       placeholder="Введите ваш телефон">
+                <div class="contact-form__error contact-form__error_tel"></div>
             </div>
-            <div class="textarea-wrapper"><textarea type="text" class="textarea textarea--default" id="message"
-                name="message" placeholder="Message or question" rows="1"></textarea></div>
-            <div class="contact-form__actions">
-              <div class="contact-form__checkbox"><label class="checkbox-wrapper" for="contact-nda">Get NDA<input
-                    type="checkbox" class="checkbox" id="contact-nda"><span class="checkbox-mark"></span></label></div>
-              <label><input type="file" id="file" accept=".pdf,.doc,.docx,.jpeg,.xls,.xlsx,.jpg,.csv,.ods,.tsv"
-                  multiple="" data-max-size="10485760" class="hiddenInput">
-                <div class="btn btn--md contact-form__attach-btn text-pink">Attach files<i class="icon-paperclip"></i>
-                </div>
-              </label>
+
+            <div class="contact-form__input-wrapper"> 
+                <input name="email" type="email" class="contact-form__input contact-form__input_email"
+                    placeholder="Введите ваш email">
+                <div class="contact-form__error contact-form__error_email"></div>
             </div>
-            <div class="footer-form">
-              <p class="contact-form__privacy">I consent to S-PRO processing my personal data according to the <a
-                  class="link-underlined" href="/privacy-policy" target="_blank">Privacy Policy</a></p>
-              <div class="contact-form__buttons"><button class="btn btn--lg btn--outline outline-pink"
-                  id="sendMessage">Send Message</button></div>
+
+            <div class="contact-form__input-wrapper"> 
+              <select class="contact-form__input contact-form__input_email">
+                <option value="d">Select type of service</option>
+                <option value="d">Service 1</option>
+                <option value="d">Service 1</option>
+                <option value="d">Service 1</option>
+              </select>
+              <div class="contact-form__error contact-form__error_email"></div>
+          </div>
+
+            <div class="contact-form__input-wrapper">
+                <textarea name="text" class="contact-form__input contact-form__text" placeholder="Введите ваше сообщение"></textarea>
+                <div class="contact-form__error contact-form__error_text"></div>
             </div>
-          </form>
+
+            <div class="contact-form__input-wrapper">
+                <input type="checkbox" name="agreement" class="contact-form__input contact-form__checkbox" id="agreement">
+                <label for="agreement" class="contact-form__checkbox-label">Я принимаю условия <a href="#">пользовательского соглашения</a></label>
+                <div class="contact-form__error contact-form__error_agreement"></div>
+            </div>
+
+            <button class="contact-form__button" type="submit"> Получить прайс </button>
+        </form>
         </div>
       </div>
     </div>
